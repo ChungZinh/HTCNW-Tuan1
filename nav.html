@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        margin: auto;
+        width: 1089px;
+        height: 200px;
+    }
+    .menu{
+        width: 100%;
+        height: 50px;
+        background-color: #126E82;
+        
+    }
+
+    
+    
+    .menu ul li {
+        height: 50px;
+        width: 217.5px;
+        background-color: #132C33;
+        float: left;
+        line-height: 50px;
+        list-style: none;
+    }
+
+    a{
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+    }
+    .menu ul li{
+        text-align: center;
+    }
+
+    .menu ul li:hover{
+        background-color: #126E82;
+
+    }
+    
+    li{
+        cursor: pointer;
+
+    }
+
+    li>hover>a{
+        color: black;
+    }
+
+    ul > li > .menu2{
+        display: none;
+    }
+
+    ul > li:hover > .menu2{
+        display: block;
+    }
+
+    .menu2{
+        transform: translateY(-2px);
+    }
+    .content{
+        height: 100vh;
+        width: 100%;
+        background-color: #D8E3E7;
+    }
+
+  
+</style>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="#">MENU 1</a></li>
+                <li><a href="#">MENU 2</a></li>
+                <li><a href="#">MENU 3</a>
+                    <ul class="menu2">
+                        <li><a href="#">MENU 3.1</a></li>
+                        <li><a href="#">MENU 3.2</a></li>
+                        <li><a href="#">MENU 3.3</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">MENU 4</a></li>
+                <li><a href="#">MENU 5</a></li>
+            </ul>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+</html>
